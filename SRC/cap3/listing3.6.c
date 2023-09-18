@@ -11,9 +11,12 @@ int main() {
     if (child_pid > 0) {
         /* This is the parent process. Sleep for a minute. */
         sleep(60);
+        
     } else {
         /* This is the child process. Exit immediately. */
+        printf("Estamos en el hijo prodigo");
         exit(0);
+        
     }
 
     return 0;
